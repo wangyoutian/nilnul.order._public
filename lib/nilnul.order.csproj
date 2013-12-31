@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7843991D-6EB2-4464-8A88-729805708922}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.relation.order</RootNamespace>
+    <AssemblyName>nilnul.relation.order</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AsymmetricI.cs" />
+    <Compile Include="ChainI.cs" />
+    <Compile Include="Comparer%28T.cs" />
+    <Compile Include="Complete.cs" />
+    <Compile Include="DirectedSet.cs" />
+    <Compile Include="ExtendedOrder_artificial.cs" />
+    <Compile Include="ExtendedOrder_infiniteOfOrder.cs" />
+    <Compile Include="ExtendedOrder_static.cs" />
+    <Compile Include="ExtendedType%28T.cs" />
+    <Compile Include="extended\ExtendedOrder_typed.cs" />
+    <Compile Include="extended\ExtendedTypeI2%28T.cs" />
+    <Compile Include="extended\Infinite%28T.cs" />
+    <Compile Include="extended\Literal%28T.cs" />
+    <Compile Include="extended\NegativeInfinite%28T.cs" />
+    <Compile Include="Extremum.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="Gt1.cs" />
+    <Compile Include="Ideal.cs" />
+    <Compile Include="Infinite%28T.cs" />
+    <Compile Include="InfiniteI%28T .cs" />
+    <Compile Include="InfiniteI.cs" />
+    <Compile Include="Infinite_artificial%28T.cs" />
+    <Compile Include="Infinite_artificial.cs" />
+    <Compile Include="Infinite_ofOrder%28T.cs" />
+    <Compile Include="IrreflexivePreorderI.cs" />
+    <Compile Include="IsomorphicI.cs" />
+    <Compile Include="GtX.cs" />
+    <Compile Include="GeX.cs" />
+    <Compile Include="EqX.cs" />
+    <Compile Include="DownwardI.cs" />
+    <Compile Include="Eq.cs" />
+    <Compile Include="Ge.cs" />
+    <Compile Include="Gt.cs" />
+    <Compile Include="Isomorphism.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Le.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LexicographicalOrder.cs" />
+    <Compile Include="LinearI %282%29.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinearI%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinearUnbound%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinearUnboundI%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinearUnboundOrderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LowerI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lt.cs" />
+    <Compile Include="Maximal.cs" />
+    <Compile Include="Minimal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Minimum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NegativeInfinite_artificial.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderedSet%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderedType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderI%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderSingleton%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderSingletonBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderSingletonDerived.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderSingletonI%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderSingletonI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrdinalI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PreorderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductOrder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflexiveI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReflexiveOrderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StrictI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StrictTotal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TotalI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TotalOrderA%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TotalOrderedI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TotalOrderedSet%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TotalOrderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Unbound%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnboundI%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnboundI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UpperI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UpperX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UpwardI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellFounded.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellFoundedI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellOrderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellOrderingTheorem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="irreflexivePreorder.cd" />
+    <None Include="linearUnbound.cd" />
+    <None Include="op.cd" />
+    <None Include="rel.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\nilnul.collection.set%28130115\nilnul.collection.set%28finite130408.csproj">
+      <Project>{62c21bd1-3f85-485a-b883-418019a6d23a}</Project>
+      <Name>nilnul.collection.set%28finite130408</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.set\lib\nilnul.set%28130616.csproj">
+      <Project>{8c8c5afb-cc2e-4737-8669-a47c96a8942d}</Project>
+      <Name>nilnul.set%28130616</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

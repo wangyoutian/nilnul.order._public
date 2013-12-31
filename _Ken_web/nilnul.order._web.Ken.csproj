@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C7345F6-4BF7-46C9-8526-EC90CDEDC0C6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.order._web.Ken</RootNamespace>
+    <AssemblyName>nilnul.order._web.Ken</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Intransitive.ascx" />
+    <Content Include="Order.ascx" />
+    <Content Include="OrderIntegers.ascx" />
+    <Content Include="Preorder.ascx" />
+    <Content Include="TransitiveReduce.ascx" />
+    <Content Include="transitiveReduce\transitiveReduce.png" />
+    <Content Include="transitiveReduce\Treatise.ascx" />
+    <Content Include="transitiveReduce\treatise\Abstract.ascx" />
+    <Content Include="transitiveReduce\treatise\Keywords.ascx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Intransitive.ascx.cs">
+      <DependentUpon>Intransitive.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Intransitive.ascx.designer.cs">
+      <DependentUpon>Intransitive.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderIntegers.ascx.cs">
+      <DependentUpon>OrderIntegers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderIntegers.ascx.designer.cs">
+      <DependentUpon>OrderIntegers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Preorder.ascx.cs">
+      <DependentUpon>Preorder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Preorder.ascx.designer.cs">
+      <DependentUpon>Preorder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransitiveReduce.ascx.cs">
+      <DependentUpon>TransitiveReduce.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TransitiveReduce.ascx.designer.cs">
+      <DependentUpon>TransitiveReduce.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="transitiveReduce\Treatise.ascx.cs">
+      <DependentUpon>Treatise.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transitiveReduce\Treatise.ascx.designer.cs">
+      <DependentUpon>Treatise.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="transitiveReduce\treatise\Abstract.ascx.cs">
+      <DependentUpon>Abstract.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transitiveReduce\treatise\Abstract.ascx.designer.cs">
+      <DependentUpon>Abstract.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="transitiveReduce\treatise\Keywords.ascx.cs">
+      <DependentUpon>Keywords.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transitiveReduce\treatise\Keywords.ascx.designer.cs">
+      <DependentUpon>Keywords.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\nilnul.aspNet.serverCtrl\nilnul.aspNet.serverCtrl.csproj">
+      <Project>{a1c5a1c5-99c9-4f07-8c05-c9997aa64f08}</Project>
+      <Name>nilnul.aspNet.serverCtrl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nilnul.aspNet\nilnul.aspNet.csproj">
+      <Project>{d7c8a9b4-eb9b-464a-abea-db3e42e0136e}</Project>
+      <Name>nilnul.aspNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nilnul.web.ctrl.handler\nilnul.web.ctrl.handler%28121221.csproj">
+      <Project>{123f49f3-152d-41fb-b0f2-40027904e5b4}</Project>
+      <Name>nilnul.web.ctrl.handler%28121221</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nilnul.webConfig\nilnul.webConfig.csproj">
+      <Project>{2bfdc46f-875f-4366-b3bc-d423044fcb49}</Project>
+      <Name>nilnul.webConfig</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28352</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12345/_apps/nilnul.order.Ken</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

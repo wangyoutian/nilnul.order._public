@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F45087E0-8383-47EB-91F7-84070F046472}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.order</RootNamespace>
+    <AssemblyName>nilnul.order%28interval130719</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AntiChainI.cs" />
+    <Compile Include="AntisymmetricTransitiveI.cs" />
+    <Compile Include="AsymmetricI.cs" />
+    <Compile Include="BoundedI.cs" />
+    <Compile Include="ChainI.cs" />
+    <Compile Include="Comparer%28T obsolete.cs" />
+    <Compile Include="ComparerAsOrder.cs" />
+    <Compile Include="ComparerOfPartialOrderA.cs" />
+    <Compile Include="Complete.cs" />
+    <Compile Include="ComparerFroTotalOrder%28T,TTotalOrder.cs" />
+    <Compile Include="ComparerI%28T.cs" />
+    <Compile Include="ComparerFroTotalOrder3%28T.cs" />
+    <Compile Include="ComparerA%28T.cs" />
+    <Compile Include="ComparerToIComparer.cs" />
+    <Compile Include="Comparer_byIComparable%28T.cs" />
+    <Compile Include="BoundedI%28T.cs" />
+    <Compile Include="Cover.cs" />
+    <Compile Include="DenseOrderI%28T.cs" />
+    <Compile Include="DenseOrderI.cs" />
+    <Compile Include="Hasse%28onlyCoverRelationWithinOrder.cs" />
+    <Compile Include="interval\ClosedCut%28T.cs" />
+    <Compile Include="interval\Cut2%28T.cs" />
+    <Compile Include="interval\OpenCut%28T.cs" />
+    <Compile Include="Order.cs" />
+    <Compile Include="StrictOrderI2%28T.cs" />
+    <Compile Include="interval\cut\ClosedCut%28T.cs" />
+    <Compile Include="interval\cut\Cut2%28T.cs" />
+    <Compile Include="interval\cut\OpenCut%28T.cs" />
+    <Compile Include="interval\Interval5%28T.cs" />
+    <Compile Include="LowerBoundedI.cs" />
+    <Compile Include="total\Bounded.cs" />
+    <Compile Include="total\bound\Bounded.cs" />
+    <Compile Include="total\bound\ComparerI.cs" />
+    <Compile Include="total\bound\Interval%28T.cs" />
+    <Compile Include="total\bound\OrderI%28T.cs" />
+    <Compile Include="total\bound\Order_FroComparer.cs" />
+    <Compile Include="total\bound\StrictTotalFroNonStrict%28T.cs" />
+    <Compile Include="total\bound\StrictTotalOrderI%28T.cs" />
+    <Compile Include="total\bound\TotalFroStrict%28T.cs" />
+    <Compile Include="total\ComparerI.cs" />
+    <Compile Include="total\Bounded2.cs" />
+    <Compile Include="total\ComparerFroIComparable%28T.cs" />
+    <Compile Include="total\ComparerA.cs" />
+    <Compile Include="total\ComparerI2%28T.cs" />
+    <Compile Include="total\finite\ClosedInterval%28T.cs" />
+    <Compile Include="total\finite\ClopenInterval%28T.cs" />
+    <Compile Include="total\finite\CloseInterval%28T,TOrderSingleton.cs" />
+    <Compile Include="total\finite\OpenInterval%28T,TOrderSingleton.cs" />
+    <Compile Include="total\finite\OpenClosedInterval%28T.cs" />
+    <Compile Include="total\finite\OpenInterval%28T.cs" />
+    <Compile Include="total\finite\Order_FroIComparable.cs" />
+    <Compile Include="total\Interval%28T,Order.cs" />
+    <Compile Include="total\IntervalI%28T,TOrder.cs" />
+    <Compile Include="total\Path.cs" />
+    <Compile Include="total\UnboundedOrderI%28T.cs" />
+    <Compile Include="total\finite\Interval%28T,TOrderSingleton.cs" />
+    <Compile Include="total\TotalFroStrict2%28T,TStrictOrder.cs" />
+    <Compile Include="total\EqualityFroTotalOrder%28T.cs" />
+    <Compile Include="total\UnboundedI.cs" />
+    <Compile Include="total\unbound\dense\Interval2%28T.cs" />
+    <Compile Include="total\unbound\dense\StrictOrderI%28T.cs" />
+    <Compile Include="total\unbound\dense\TotalFromStrict%28T.cs" />
+    <Compile Include="total\unbound\Interval2%28T.cs" />
+    <Compile Include="total\unbound\dense\ClosedInterval%28T,TOrder.cs" />
+    <Compile Include="total\unbound\dense\ClopenInterval%28T,TOrder.cs" />
+    <Compile Include="total\unbound\dense\OpenCloseInterval%28T,TOrder.cs" />
+    <Compile Include="total\unbound\dense\OpenInterval%28T,TOrder.cs" />
+    <Compile Include="total\unbound\dense\Interval%28T,TOrder.cs" />
+    <Compile Include="total\unbound\dense\Interval%28T.cs" />
+    <Compile Include="total\unbound\dense\OrderI%28T.cs" />
+    <Compile Include="total\unbound\Interval%28T.cs" />
+    <Compile Include="total\finite\OrderI%28T.cs" />
+    <Compile Include="total\finite\StrictFroTotal%28T.cs" />
+    <Compile Include="total\finite\StrictOrderI%28T.cs" />
+    <Compile Include="total\finite\TotalFromStrict%28T.cs" />
+    <Compile Include="total\IntervalI%28T.cs" />
+    <Compile Include="total\Order_FroIComparable.cs" />
+    <Compile Include="total\OrderI%28T.cs" />
+    <Compile Include="total\StrictTotalFroNonStrict%28T.cs" />
+    <Compile Include="total\StrictTotalOrderI%28T.cs" />
+    <Compile Include="total\TotalFroStrict%28T.cs" />
+    <Compile Include="total\unbound\StrictFroTotal%28T.cs" />
+    <Compile Include="total\unbound\StrictOrderI%28T.cs" />
+    <Compile Include="total\unbound\TotalFromStrict%28T.cs" />
+    <Compile Include="TransitiveReduceX.cs" />
+    <Compile Include="unbound\BothUnboundOrderI2%28T.cs" />
+    <Compile Include="IntervalI%28T.cs" />
+    <Compile Include="interval\BinarySearchX.cs" />
+    <Compile Include="interval\ClosedInterval%28T%29.cs" />
+    <Compile Include="interval\ClosedInterval2%28T,TOrder%29.cs" />
+    <Compile Include="interval\ClosedInterval2%28T.cs" />
+    <Compile Include="interval\ClosedInterval3%28T.cs" />
+    <Compile Include="interval\Comparer.cs" />
+    <Compile Include="interval\Cut%28T.cs" />
+    <Compile Include="interval\cut\Cut.cs" />
+    <Compile Include="interval\cut\op\OpX.cs" />
+    <Compile Include="interval\Cut_orderedType%28T.cs" />
+    <Compile Include="interval\Interval%28T,TOrderSingleton.cs" />
+    <Compile Include="interval\Interval2%28T2.cs" />
+    <Compile Include="interval\Interval3%28T.cs" />
+    <Compile Include="interval\Interval4%28T.cs" />
+    <Compile Include="interval\IntervalI%28T.cs" />
+    <Compile Include="interval\IntervalI.cs" />
+    <Compile Include="interval\Interval_orderedType%28TOrderedType.cs" />
+    <Compile Include="interval\OpenLowerInterval2%28T.cs" />
+    <Compile Include="interval\OpenLowerInterval3%28T.cs" />
+    <Compile Include="interval\OpenUpperInterval2%28T.cs" />
+    <Compile Include="interval\OpenUpperInterval3%28T.cs" />
+    <Compile Include="interval\order\op\UpwardI.cs" />
+    <Compile Include="interval\_1\Interval%28T%29 .cs" />
+    <Compile Include="interval\_\Interval%28T%29.cs" />
+    <Compile Include="total\Order_FroSysComparer.cs" />
+    <Compile Include="total\Order_FroComparer.cs" />
+    <Compile Include="TotalFroStrict%28T.cs" />
+    <Compile Include="EqualityI.cs" />
+    <Compile Include="NotEqualFroEq%28T.cs" />
+    <Compile Include="StrictTotalFroNonStrict%28T.cs" />
+    <Compile Include="EqualityFroTotalOrder%28T.cs" />
+    <Compile Include="EqualityFroTotalOrder%28T,TTotalOrder.cs" />
+    <Compile Include="TotalOrderOnTypeI%28T.cs" />
+    <Compile Include="TotalOrderedType.cs" />
+    <Compile Include="TotalOrderedTypeI.cs" />
+    <Compile Include="TotalOrderedTypeA%28T,TOrderDefault.cs" />
+    <Compile Include="TotalOrderedTypeI2%28T,TOrder%29.cs" />
+    <Compile Include="TotalOrderedTypeI%28T%29.cs" />
+    <Compile Include="DirectedCompleteOrderI.cs" />
+    <Compile Include="lattice\CompleteLatticeI.cs" />
+    <Compile Include="SemiOrderI.cs" />
+    <Compile Include="StrictOrderI.cs" />
+    <Compile Include="QuasiOrder.cs" />
+    <Compile Include="TotalOrderI3%28T%29 noCompare justPlaceHolder.cs" />
+    <Compile Include="TotalOrderA_compare%28T.cs" />
+    <Compile Include="TotalOrderedTypeI%28T,TOrder%29.cs" />
+    <Compile Include="TotalOrderA2%28T.cs" />
+    <Compile Include="TotalOrderAssertion.cs" />
+    <Compile Include="StrictTotalOrderI%28T.cs" />
+    <Compile Include="PathOfStrictOrder.cs" />
+    <Compile Include="PreOrderI%28T.cs" />
+    <Compile Include="PreOrderI2.cs" />
+    <Compile Include="StrictOrderI%28T.cs" />
+    <Compile Include="FuncAsOrder%28T.cs" />
+    <Compile Include="OrderedList%28T.cs" />
+    <Compile Include="StrictTotalI%28T.cs" />
+    <Compile Include="OrderFullFledged.cs" />
+    <Compile Include="StrictTotalToNonStrict%28T.cs" />
+    <Compile Include="ToStrict%28T.cs" />
+    <Compile Include="TotalOrderedType%28T.cs" />
+    <Compile Include="TotalOrderI2X.cs" />
+    <Compile Include="TotalOrderI2%28T.cs" />
+    <Compile Include="DirectedX.cs" />
+    <Compile Include="IntransitiveDirected2%28T.cs" />
+    <Compile Include="IntransitiveDirectedX.cs" />
+    <Compile Include="IntransitiveDirected%28T.cs" />
+    <Compile Include="IntransitiveConnected.cs" />
+    <Compile Include="IntransitiveRelationAsOrder%28T.cs" />
+    <Compile Include="DirectedDag%28T.cs" />
+    <Compile Include="Dag%28T%29.cs" />
+    <Compile Include="ConnectedDag%28T.cs" />
+    <Compile Include="DirectedSet.cs" />
+    <Compile Include="ExtendedOrder_artificial.cs" />
+    <Compile Include="ExtendedOrder_infiniteOfOrder.cs" />
+    <Compile Include="ExtendedOrder_static.cs" />
+    <Compile Include="ExtendedType%28T.cs" />
+    <Compile Include="extended\ExtendedOrder_typed.cs" />
+    <Compile Include="extended\ExtendedTypeI2%28T.cs" />
+    <Compile Include="extended\Infinite%28T.cs" />
+    <Compile Include="extended\Literal%28T.cs" />
+    <Compile Include="extended\NegativeInfinite%28T.cs" />
+    <Compile Include="Extremum.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="Gt1.cs" />
+    <Compile Include="Ideal.cs" />
+    <Compile Include="Infinite%28T.cs" />
+    <Compile Include="InfiniteI%28T .cs" />
+    <Compile Include="InfiniteI.cs" />
+    <Compile Include="Infinite_artificial%28T.cs" />
+    <Compile Include="Infinite_artificial.cs" />
+    <Compile Include="Infinite_ofOrder%28T.cs" />
+    <Compile Include="IrreflexivePreorderI.cs" />
+    <Compile Include="IsomorphicI.cs" />
+    <Compile Include="GtX.cs" />
+    <Compile Include="GeX.cs" />
+    <Compile Include="EqX.cs" />
+    <Compile Include="DownwardI.cs" />
+    <Compile Include="Eq.cs" />
+    <Compile Include="Ge.cs" />
+    <Compile Include="Gt.cs" />
+    <Compile Include="Isomorphism.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IntransitiveX.cs" />
+    <Compile Include="Lattice%28T.cs" />
+    <Compile Include="Le.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LexicographicalOrder.cs" />
+    <Compile Include="LinearI %282%29.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinearI%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinearUnbound%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinearUnboundI%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinearUnboundOrderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LowerI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lt.cs" />
+    <Compile Include="Maximal.cs" />
+    <Compile Include="Minimal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Minimum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NegativeInfinite_artificial.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderedSet%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderedType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderI%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderSingleton%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderSingletonBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderSingletonDerived.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderSingletonI%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderSingletonI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrdinalI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Path.cs" />
+    <Compile Include="PreorderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProductOrder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflexiveI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReflexiveOrderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sign.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StrictI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StrictTotal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TotalI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TotalOrderA%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TotalOrderedI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TotalOrderedSet%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TotalOrderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="total\BinarySearch.cs" />
+    <Compile Include="total\unbound\OrderI%28T.cs" />
+    <Compile Include="total\finite\Interval%28T-.cs" />
+    <Compile Include="Unbound%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnboundI%28T.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnboundI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UpperBoundedI.cs" />
+    <Compile Include="UpperI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UpperX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UpwardI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellFounded.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellFoundedI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellOrderI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WellOrderingTheorem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderWithBothExtremum.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="irreflexivePreorder.cd" />
+    <None Include="linearUnbound.cd" />
+    <None Include="op.cd" />
+    <None Include="rel.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bound\" />
+    <Folder Include="directed\" />
+    <Folder Include="total\bound\interval\" />
+    <Folder Include="total\finite\strict\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\nilnul%28130115\lib\nilnul%28130621.csproj">
+      <Project>{781321c7-7737-4b1f-ba13-048169502805}</Project>
+      <Name>nilnul%28130621</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.bit%28sln\lib\nilnul.bit130616.csproj">
+      <Project>{109c1344-5bea-4e1a-b662-2c7fe60ac428}</Project>
+      <Name>nilnul.bit130616</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.collection.set\lib\nilnul.collection.set130710.csproj">
+      <Project>{2aa0c2e4-554d-4e03-bb2d-9325def32ad0}</Project>
+      <Name>nilnul.collection.set130710</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.collection\lib\nilnul.collection%28131218.csproj">
+      <Project>{d36483ec-d896-4eb7-a876-2c030bab56e5}</Project>
+      <Name>nilnul.collection%28131218</Name>
+      <Aliases>collection</Aliases>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.obj\lib\nilnul.obj.csproj">
+      <Project>{9807479b-f797-4a18-9feb-0cc576c27308}</Project>
+      <Name>nilnul.obj</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\nilnul.relation%28sln\lib\nilnul.relation%28130616.csproj">
+      <Project>{d9162372-81be-4d8f-8321-e5d53372c59c}</Project>
+      <Name>nilnul.relation%28130616</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
