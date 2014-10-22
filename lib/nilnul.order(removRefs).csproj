@@ -56,6 +56,7 @@
     <Compile Include="ComparerA%28T.cs" />
     <Compile Include="ComparerToIComparer.cs" />
     <Compile Include="Comparer_byIComparable%28T.cs" />
+    <Compile Include="extended\副本 ExtendedOrder_typed.cs" />
     <Compile Include="total\OrderI%28T.cs" />
     <Compile Include="total\Order_FroSysComparer.cs" />
     <Compile Include="total\Order_FroComparer.cs" />
@@ -295,12 +296,9 @@
       <Project>{9807479b-f797-4a18-9feb-0cc576c27308}</Project>
       <Name>nilnul.obj</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\nilnul.relation%28sln\lib\nilnul.relation%28130616.csproj">
-      <Project>{d9162372-81be-4d8f-8321-e5d53372c59c}</Project>
-      <Name>nilnul.relation%28130616</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="extended\order\" />
     <Folder Include="interval\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

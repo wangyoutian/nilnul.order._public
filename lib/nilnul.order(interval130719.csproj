@@ -11,10 +11,14 @@
     <AssemblyName>nilnul.order%28interval130719</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,6 +69,8 @@
     <Compile Include="Cover.cs" />
     <Compile Include="DenseOrderI%28T.cs" />
     <Compile Include="DenseOrderI.cs" />
+    <Compile Include="extended\NegInf%28T.cs" />
+    <Compile Include="extended\Inf%28T.cs" />
     <Compile Include="interval\ClosedCut%28T.cs" />
     <Compile Include="interval\Cut2%28T.cs" />
     <Compile Include="interval\OpenCut%28T.cs" />
@@ -396,10 +402,6 @@
       <Project>{109c1344-5bea-4e1a-b662-2c7fe60ac428}</Project>
       <Name>nilnul.bit130616</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\nilnul.collection.set\lib\nilnul.collection.set130710.csproj">
-      <Project>{2aa0c2e4-554d-4e03-bb2d-9325def32ad0}</Project>
-      <Name>nilnul.collection.set130710</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\nilnul.collection\lib\nilnul.collection%28131218.csproj">
       <Project>{d36483ec-d896-4eb7-a876-2c030bab56e5}</Project>
       <Name>nilnul.collection%28131218</Name>
@@ -408,10 +410,6 @@
     <ProjectReference Include="..\..\nilnul.obj\lib\nilnul.obj.csproj">
       <Project>{9807479b-f797-4a18-9feb-0cc576c27308}</Project>
       <Name>nilnul.obj</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\nilnul.relation%28sln\lib\nilnul.relation%28130616.csproj">
-      <Project>{d9162372-81be-4d8f-8321-e5d53372c59c}</Project>
-      <Name>nilnul.relation%28130616</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

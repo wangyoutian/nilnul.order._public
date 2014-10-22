@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using nilnul.collection.interval.cut;
-using nilnul.relation.order;
+using nilnul.order;
 using nilnul.collection.set;
-using nilnul.set;
 using nilnul.order;
 
 namespace nilnul.order.interval

@@ -81,6 +81,19 @@ namespace nilnul.order
 
 		}
 
+		static public IEnumerable<IEnumerable<Pair2<T>>> GetPaths<T>(
+
+	IEnumerable<nilnul.relation.Pair2<T>> directed__notNull
+
+)
+		{
+
+
+			return GetPaths(directed__notNull,EqualityComparer<T>.Default);
+
+		}
+
+
 
 		static public IEnumerable<IEnumerable<Pair2<T>>> Ideal<T>(IEnumerable<Pair2<T>> directed_downward_notNull, IEnumerable<T> node_within,IEqualityComparer<T> eq)
 		{

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using nilnul.relation.order;
+using nilnul.order;
 
 namespace nilnul.order
 {

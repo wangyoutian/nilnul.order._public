@@ -11,5 +11,6 @@ namespace nilnul.order.total
 	public partial interface ComparerI2<T>
 	{
 
+
 	}
 }

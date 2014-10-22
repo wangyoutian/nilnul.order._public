@@ -22,6 +22,13 @@ namespace nilnul.order.extended
 				set { _literal = value; }
 			}
 
+			public T val { 
+				get{
+					return _literal;
+			
+				}
+			}
+
 			public Literal(T literal)
 				
 			{

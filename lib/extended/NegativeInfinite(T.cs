@@ -6,7 +6,7 @@ using System.Text;
 namespace nilnul.order.extended
 {
 	
-
+		[Obsolete("NegInf")]
 		public class NegativeInfinite<T> : ExtendedTypeI2<T> {
 
 			static private readonly NegativeInfinite<T> _Instance = new NegativeInfinite<T>();

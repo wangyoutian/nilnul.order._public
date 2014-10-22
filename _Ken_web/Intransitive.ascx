@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Intransitive.ascx.cs" Inherits="nilnul.order._web.Ken.Intransitive" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true"  %>
 <p>
 	I just cannot believe intransitiveness is the primitive building block of order, which must be transitive in essence.</p>
 <p>

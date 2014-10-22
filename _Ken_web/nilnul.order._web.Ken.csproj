@@ -57,10 +57,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Extended.ascx" />
+    <Content Include="Interval.ascx" />
+    <Content Include="interval\Cut.ascx" />
     <Content Include="Intransitive.ascx" />
+    <Content Include="StrictOrder.ascx" />
     <Content Include="Order.ascx" />
     <Content Include="OrderIntegers.ascx" />
     <Content Include="Preorder.ascx" />
+    <Content Include="strictOrder\Order.ascx" />
     <Content Include="TransitiveReduce.ascx" />
     <Content Include="transitiveReduce\transitiveReduce.png" />
     <Content Include="transitiveReduce\Treatise.ascx" />
@@ -69,13 +74,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Intransitive.ascx.cs">
-      <DependentUpon>Intransitive.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Intransitive.ascx.designer.cs">
-      <DependentUpon>Intransitive.ascx</DependentUpon>
-    </Compile>
     <Compile Include="OrderIntegers.ascx.cs">
       <DependentUpon>OrderIntegers.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

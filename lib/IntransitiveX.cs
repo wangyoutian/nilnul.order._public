@@ -102,7 +102,18 @@ namespace nilnul.order
 
 	)
 		{
-			return new HashSet<T>( graph.Where(c => maximals.Contains(c.second)).Select(c => c.first));
+			return new HashSet<T>(graph.Where(c => maximals.Contains(c.second)).Select(c => c.first));
+
+			//return graph.Where(c => maximals.Contains(c.second) && !maximals.Contains(c.first)).Select(c => c.second);
+
+		}
+		static public HashSet<T> _MaximalNexts_hashset2<T>(
+		IEnumerable<Pair2<T>> graph,
+		IEnumerable<T> maximals
+
+	)
+		{
+			return new HashSet<T>(graph.Where(c => maximals.Contains(c.second)).Select(c => c.first));
 
 			//return graph.Where(c => maximals.Contains(c.second) && !maximals.Contains(c.first)).Select(c => c.second);
 
@@ -127,6 +138,13 @@ IEnumerable<T> minimals
 			return new HashSet<T>( graph.Where(c => minimals.Contains(c.first)).Select(c => c.second));
 		}
 
+		static public HashSet<T> _MinimalSubsequents_hashset<T>(
+IEnumerable<Pair2<T>> graph,
+IEnumerable<T> minimals
+)
+		{
+			return new HashSet<T>(graph.Where(c => minimals.Contains(c.first)).Select(c => c.second));
+		}
 
 
 		static public IEnumerable<T> _Maximal<T>(
@@ -209,18 +227,36 @@ IEnumerable<T> minimals
 		static public IEnumerable<Pair<T>> _RemainedArcs2<T>(
 		IEnumerable<Pair<T>> dag,
 			IEnumerable<T> removedNodes
-		
+
 	)
 		where T : IEquatable<T>
 		{
 			return dag.Where(
 				c => (
-						! (
-							removedNodes.Contains(c.first) 
-							|| 
+						!(
+							removedNodes.Contains(c.first)
+							||
 							removedNodes.Contains(c.second)
 						)
- 				)
+				)
+			);
+		}
+
+		static public IEnumerable<Pair2<T>> _RemainedArcs3<T>(
+		IEnumerable<Pair2<T>> dag,
+			IEnumerable<T> removedNodes
+
+	)
+		where T : IEquatable<T>
+		{
+			return dag.Where(
+				c => (
+						!(
+							removedNodes.Contains(c.first)
+							||
+							removedNodes.Contains(c.second)
+						)
+				)
 			);
 		}
 

@@ -15,4 +15,8 @@
 	定义：total</p>
 <p>
 	定义：strict</p>
+<p>
+	定义：connected</p>
+<p>
+	定义：hamilton</p>
 

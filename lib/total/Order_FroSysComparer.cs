@@ -37,6 +37,7 @@ namespace nilnul.order.total
 		public Order_FroSysComparer(IComparer<T> comparer)
 			:this(comparer.ToNotNull())
 		{
+
 		}
 					
 

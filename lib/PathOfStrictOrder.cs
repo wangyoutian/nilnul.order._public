@@ -1,4 +1,5 @@
-﻿using System;
+﻿using nilnul.collection.set;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,7 +29,7 @@ namespace nilnul.order
 		public PathOfStrictOrder(StrictTotalOrderI<T> order, List<T> nodes)
 		{
 
-			nilnul.set.NonEmptyX.PredicateOfIEnumerable.assert(nodes.Cast<object>());
+			NonEmptyX.PredicateOfIEnumerable.assert(nodes.Cast<object>());
 			for (int i = 0; i < nodes.Count-1; i++)
 			{
 
